@@ -13,7 +13,7 @@ Often when the security level of an application is mentioned in requirements, th
 - _The application must defend against attacks from the OWASP TOP 10_
 - ...
 
-These security requirements are too generic, and thus useless for a development team...
+These security requirements are too generic, and thus useless for a development team.
 
 In order to build a secure application, from a pragmatic point of view, it is important to identify the attacks which the application must defend against, according to its business and technical context. Abuse cases were a frequently recommended _threat modeling_ technique, and reviewing the [threat modeling](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) cheat sheet may be helpful. In practice, the abuse case framework seems heavyweight and there are few published examples or success stories.
 
@@ -21,7 +21,7 @@ In order to build a secure application, from a pragmatic point of view, it is im
 
 The objective of this cheat sheet is to provide an explanation of what an **Abuse Case** is, how abuse cases can be important when considering the security of an application, and finally to provide a proposal for a pragmatic approach to building a list of abuse cases and tracking them for every feature planned for implementation as part of an application. The cheat sheet may be used for this purpose regardless of the project methodology used (waterfall or agile).
 
-**Important note about this Cheat Sheet:**
+**Important note about this cheat sheet:**
 
 ```text
 The main objective is to provide a pragmatic approach in order to allow a company or a project team
@@ -44,7 +44,7 @@ Clearly identifying the attacks against which the application must defend is ess
 
 #### Notion of Abuse Cases
 
-You can think of **Abuse cases** in two ways. The first is to discover attacks (answer the question "what can go wrong"), and the second is to help record those attacks (informally, this includes threats, issues, risks) in a form that may be less intimidating to developers.
+You can think of **Abuse Cases** in two ways. The first is to discover attacks (answer the question "what can go wrong"), and the second is to help record those attacks (informally, this includes threats, issues, risks) in a form that may be less intimidating to developers.
 
 An **Abuse Case** can be defined as:
 
@@ -111,7 +111,7 @@ In agile projects, the definition workshop must be made after the meeting in whi
 
 In waterfall projects, the definition workshop must be made when the business features to implement are identified and known by the business.
 
-Whatever the mode of the project used (agile or waterfall), the abuse cases selected to be addressed must become security requirements in each feature specification section (waterfall) or User Story acceptance criteria (agile) in order to allow additional cost/effort evaluation, identification and implementation of the countermeasures.
+Whatever project mode is used (agile or waterfall), the abuse cases selected to be addressed must become security requirements in each feature specification section (waterfall) or User Story acceptance criteria (agile) in order to allow additional cost/effort evaluation, identification and implementation of the countermeasures.
 
 Each abuse case must have a unique identifier in order to allow tracking throughout the whole project/sprint (details about this point will be given in the proposal section).
 
@@ -169,7 +169,7 @@ For each feature, follow this flow:
 1. Key business people explain the current feature from a business point of view.
 2. Penetration testers propose and explain a set of attacks that they can perform against the feature.
 3. For each attack proposed:
-   1. Appsec proposes a countermeasure and a preferred set up location (infrastructure, network, code, design...).
+   1. AppSec proposes a countermeasure and a preferred set up location (infrastructure, network, code, design...).
    2. Technical people give feedback about the feasibility of the proposed countermeasure.
    3. If an abuse case involves a specific vulnerability, penetration testers may record its Common Vulnerability Scoring System (CVSS) severity score and vector. [FIRST explains that CVSS measures severity and should not be used alone to assess risk](https://www.first.org/cvss/v3.1/user-guide#2-1-CVSS-Measures-Severity-not-Risk).
    4. Risk leaders assess the abuse case's likelihood and business impact using the organization's risk assessment method. Record this business risk rating and its rationale separately from any CVSS score; do not modify a CVSS score to represent business risk.
@@ -201,7 +201,7 @@ used during the next workshop in combination with input from penetration testers
 
 The spreadsheet contains (at this stage) the list of all abuse cases that must be handled and, potentially (depending on the capacity) corresponding countermeasures.
 
-Now, there are two remaining task:
+Now, there are two remaining tasks:
 
 1. Key business people must update the specification of each feature (waterfall) or the User Story of each feature (agile) to include the associated abuse cases as Security Requirements (waterfall) or Acceptance Criteria (agile).
 2. Key technical people must evaluate the overhead in terms of expense/effort to take into account the countermeasure.
@@ -330,7 +330,7 @@ As an attacker, I bypass access control checks by modifying the URL, internal ap
 
 _Abuse Case:_
 
-As an attacker, I manipulate the primary key and change it to access another's users record, allowing viewing or editing someone else's account.
+As an attacker, I manipulate the primary key and change it to access anothers user's record, allowing viewing or editing someone else's account.
 
 _Abuse Case:_
 
